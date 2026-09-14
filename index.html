@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AYMATECH Business Solutions</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&display=swap');
+:root{--navy:#031a43;--navy2:#062b63;--blue:#087fe8;--cyan:#17c1ff;--white:#fff;--ink:#092451}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,Tahoma,Arial,sans-serif;color:var(--ink);background:#fff}a{text-decoration:none}
+.wrap{width:min(1220px,94%);margin:auto}
+header{height:76px;background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 3px 18px #001a4020}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;color:#092451;font-family:Arial,sans-serif;font-weight:800;font-size:22px}.logoA{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#13c3ff,#086be0);color:#fff;display:grid;place-items:center;font-size:29px}.logo small{display:block;font-size:9px;letter-spacing:2px;font-weight:500}
+nav{display:flex;gap:28px;align-items:center;font-size:13px;font-weight:700}nav a{color:#092451;padding:10px 5px}nav a:first-child{color:#fff;background:linear-gradient(135deg,#087ee8,#17bfff);padding:10px 22px;border-radius:11px}.lang{border:1px solid #168de9;border-radius:9px;padding:7px 14px;color:#092451}
+.hero{min-height:610px;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;background:#041b46}.heroLeft{position:relative;background:linear-gradient(145deg,#0a438b,#041a43);overflow:hidden}
+.heroLeft:before{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 0 54%,#087ee8 55% 59%,#18c1ff 60% 62%,transparent 63%);opacity:.9}
+.skyline{position:absolute;left:0;right:0;bottom:0;height:48%;background:repeating-linear-gradient(90deg,#082a57 0 28px,transparent 28px 50px);opacity:.85}.skyline:after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:#d2a95d;box-shadow:0 -4px 25px #d2a95d88}
+.kuwait{position:absolute;top:50px;left:12%;font:italic 44px cursive;color:#fff;line-height:.9;z-index:3}.kuwait b{color:#18c1ff;font-weight:400}
+.towers{position:absolute;bottom:15%;left:41%;width:115px;height:250px;z-index:4}.tower{position:absolute;bottom:50px;width:60px;height:88px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#fff,#6987a1 15%,#061a3f 46%,#d6b66d 49%,#142d4f 58%,#e1c27a 60%,#061a3f 69%);box-shadow:0 0 25px #e8ca7d66}.tower:after{content:"";position:absolute;bottom:-82px;left:26px;width:8px;height:88px;background:#ddd}.tower.one{left:0}.tower.two{left:55px;bottom:78px;transform:scale(.8)}
+.heroBadge{position:absolute;left:8%;bottom:35px;background:#061b46;color:#fff;border:1px solid #15bcff;border-radius:9px;padding:10px 20px;font-weight:800;z-index:6}
+.heroRight{background:#fff;position:relative;padding:65px 6% 45px;display:flex;align-items:center}.heroRight:before{content:"";position:absolute;top:0;left:-80px;bottom:0;width:120px;background:linear-gradient(135deg,#087ee8,#17c1ff);clip-path:polygon(55% 0,100% 0,55% 100%,0 100%);opacity:.95}
+.heroContent{position:relative;z-index:2;max-width:590px}.micro{color:#087fe8;font-weight:800;font-size:14px}.heroContent h1{font:800 68px Arial,sans-serif;letter-spacing:-2px;margin:7px 0 0;color:#0a234b}.heroContent h1 span{color:#16baff}.business{font:22px Arial,sans-serif;letter-spacing:4px;color:#3b5577}.tag{color:#087fe8;font-size:24px;font-weight:800;margin-top:6px}.arabic{font-size:27px;font-weight:800}.desc{font-size:16px;color:#52647e;line-height:2;margin:12px 0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.btn{padding:11px 22px;border-radius:28px;font-weight:800;font-size:14px}.primary{background:linear-gradient(135deg,#087fe8,#18c1ff);color:#fff}.outline{border:1px solid #087fe8;color:#087fe8}
+.trust{background:#fff;padding:18px 0;border-top:1px solid #e6eef7}.trustGrid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}.trustItem{border-left:1px solid #dce6f1;padding:5px}.trustItem:last-child{border:0}.trustIcon{font-size:28px;color:#087fe8}.trustItem strong{display:block}.trustItem small{color:#6a7890}
+.services{background:var(--navy);color:#fff;padding:25px 0 32px}.sectionTitle{text-align:center}.sectionTitle h2{font-size:34px;margin:0}.underline{width:58px;height:4px;background:linear-gradient(90deg,#087ee8,#18c1ff);margin:7px auto 20px;border-radius:4px}.serviceGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.serviceCard{background:linear-gradient(145deg,#082d62,#05224d);border:1px solid #168ee855;border-radius:13px;padding:20px 15px;text-align:center;min-height:185px}.serviceIcon{font-size:39px;color:#22c4ff}.serviceCard h3{font-size:16px;margin:8px 0 2px}.serviceCard p{font-size:12px;color:#d8e8fa;margin:0}.roundArrow{width:36px;height:36px;border:1px solid #19bfff;border-radius:50%;display:grid;place-items:center;margin:13px auto 0}
+.about{background:#fff;padding:65px 0}.aboutGrid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px}.aboutText h2{font-size:38px;margin:0}.aboutText p{font-size:15px;color:#62738c;line-height:2}.aboutImage{position:relative;overflow:hidden;border-radius:20px}.aboutImage img{display:block;width:100%}.aboutImage:after{content:"التقنية اليوم\A لبناء مستقبل أفضل غدًا";white-space:pre;position:absolute;left:8%;bottom:12%;color:#fff;font-size:25px;font-weight:800;line-height:1.5;text-shadow:0 2px 8px #0009}
+.stats{background:#fff;border-top:1px solid #e2eaf4;border-bottom:1px solid #e2eaf4;padding:14px 0}.statsGrid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}.stat{border-left:1px solid #dce6f1}.stat:last-child{border:0}.stat b{color:#087ee8;font-size:29px;display:block}.stat span{font-size:13px}
+.contact{padding:0;background:#fff}.contactGrid{display:grid;grid-template-columns:.8fr 1.2fr;min-height:400px}.contactVisual{background:linear-gradient(145deg,#03183d,#07509c);position:relative;overflow:hidden;padding:70px 8%;color:#fff}.contactVisual:after{content:"";position:absolute;left:-10%;top:0;bottom:0;width:130px;background:linear-gradient(135deg,#087ee8,#18c1ff);transform:skewX(25deg)}.contactVisual h2{font-size:37px;position:relative;z-index:2}.contactVisual p{font-size:28px;line-height:1.5;position:relative;z-index:2}.contactFormArea{padding:55px 7%;background:#fff}.contactFormArea h2{font-size:36px;margin:0}.contactFormArea>p{color:#68778e}.form{max-width:700px}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}label{display:block;font-size:12px;font-weight:800}input,select,textarea{width:100%;border:1px solid #d9e3ef;border-radius:8px;padding:10px;margin:4px 0 10px;font:inherit;color:#10274d}textarea{min-height:100px;resize:vertical}.send{width:100%;border:0;cursor:pointer;font:inherit}
+.contactInfo{margin-top:20px;display:grid;gap:7px}.info{padding:8px 10px;border-bottom:1px solid #e5edf6;color:#17365e}
+footer{background:#031538;color:#fff;padding:25px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.foot a{color:#fff;margin:0 8px;font-size:12px}.foot small{color:#bfd0e6}
+@media(max-width:950px){nav{display:none}.hero{grid-template-columns:1fr}.heroLeft{min-height:350px}.heroRight{min-height:520px}.heroRight:before{display:none}.serviceGrid{grid-template-columns:repeat(2,1fr)}.aboutGrid,.contactGrid{grid-template-columns:1fr}.contactVisual{min-height:300px}.trustGrid{grid-template-columns:repeat(2,1fr);gap:10px}}
+@media(max-width:560px){.heroContent h1{font-size:50px}.tag,.arabic{font-size:21px}.serviceGrid,.statsGrid,.row{grid-template-columns:1fr}.trustGrid{grid-template-columns:1fr}.serviceCard{min-height:160px}.contactFormArea{padding:42px 5%}.foot{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+<a class="logo" href="#home"><span class="logoA">A</span><span>AYMATECH<small>BUSINESS SOLUTIONS</small></span></a>
+<nav><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#why">لماذا AYMATECH؟</a><a href="#work">أعمالنا</a><a href="#contact">تواصل معنا</a></nav>
+<a class="lang" href="#">EN ◉</a>
+</div></header>
+
+<section class="hero" id="home">
+<div class="heroLeft"><div class="kuwait">Kuwait<br><b>and Beyond</b></div><div class="skyline"></div><div class="towers"><i class="tower one"></i><i class="tower two"></i></div><div class="heroBadge">الكويت وما بعدها</div></div>
+<div class="heroRight"><div class="heroContent"><div class="micro">التقنية • الأشخاص • أعمال أفضل</div><h1>AYMA<span>TECH</span></h1><div class="business">Business Solutions</div><div class="tag">Smart Solutions. Better Business.</div><div class="arabic">حلول ذكية .. لأعمال أفضل</div><p class="desc">نقدم حلولًا رقمية متكاملة لمساعدة الشركات والمؤسسات على النمو وإدارة أعمالها بكفاءة باستخدام أحدث التقنيات.</p><div class="actions"><a class="btn primary" href="#contact">اطلب حلاً مناسبًا ←</a><a class="btn outline" href="https://wa.me/96569905472">تواصل معنا عبر واتساب</a></div></div></div>
+</section>
+
+<div class="trust"><div class="wrap trustGrid"><div class="trustItem"><div class="trustIcon">🤝</div><strong>ثقة</strong><small>شريكك التقني</small></div><div class="trustItem"><div class="trustIcon">💡</div><strong>حلول مبتكرة</strong><small>أفكار عملية</small></div><div class="trustItem"><div class="trustIcon">⚙</div><strong>دعم مستمر</strong><small>متابعة وصيانة</small></div><div class="trustItem"><div class="trustIcon">↗</div><strong>نتائج أفضل</strong><small>أعمال أكثر كفاءة</small></div></div></div>
+
+<section class="services" id="services"><div class="wrap"><div class="sectionTitle"><h2>خدماتنا</h2><div class="underline"></div></div><div class="serviceGrid">
+<div class="serviceCard"><div class="serviceIcon">⚙</div><h3>الدعم الفني والصيانة</h3><p>دعم مستمر لضمان استمرارية أعمالك</p><div class="roundArrow">←</div></div>
+<div class="serviceCard"><div class="serviceIcon">☁</div><h3>الحلول السحابية</h3><p>حلول آمنة ومرنة لحفظ وإدارة بياناتك</p><div class="roundArrow">←</div></div>
+<div class="serviceCard"><div class="serviceIcon">▥</div><h3>أنظمة إدارة الأعمال</h3><p>حلول متكاملة لإدارة العمليات اليومية</p><div class="roundArrow">←</div></div>
+<div class="serviceCard"><div class="serviceIcon">◎</div><h3>المواقع والحلول الرقمية</h3><p>مواقع احترافية وحلول رقمية مبتكرة</p><div class="roundArrow">←</div></div>
+<div class="serviceCard"><div class="serviceIcon">▦</div><h3>البرامج المحاسبية</h3><p>برامج متخصصة لإدارة أعمالك المالية بكفاءة</p><div class="roundArrow">←</div></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="wrap aboutGrid"><div class="aboutText"><div class="micro">AYMATECH BUSINESS SOLUTIONS</div><h2>من نحن؟</h2><div class="underline" style="margin-right:0"></div><p><b>AYMATECH</b> هي شركة متخصصة في تقديم الحلول الرقمية المبتكرة لمساعدة الشركات والمؤسسات على تطوير أعمالها وتحقيق أهدافها.</p><p>نحن نؤمن بأن التقنية هي المحرك الأساسي للنمو، ولذلك نعمل على تقديم حلول عملية وموثوقة تناسب احتياجات عملائنا في الكويت والمنطقة.</p><a class="btn primary" href="#contact">المزيد عنا ←</a></div><div class="aboutImage"><img src="brand-services.png" alt="AYMATECH Business Solutions"></div></div></section>
+
+<div class="stats"><div class="wrap statsGrid"><div class="stat"><b>+50</b><span>عميل وشريك نجاح</span></div><div class="stat"><b>+100</b><span>مشروع مكتمل</span></div><div class="stat"><b>+5</b><span>سنوات من الخبرة</span></div><div class="stat"><b>الكويت</b><span>نخدم في الكويت وما بعدها</span></div></div></div>
+
+<section class="contact" id="contact"><div class="contactGrid">
+<div class="contactVisual"><div class="micro" style="color:#19c1ff">LET'S CONNECT</div><h2>شريكك التقني<br>لنجاح أعمالك</h2><p>التقنية اليوم<br>لبناء مستقبل أفضل غدًا</p><div class="contactInfo"><div>📞 +965 6990 5472</div><div>💬 +965 6990 5472</div><div>✉️ engaymanelhware31@gmail.com</div><div>🌐 www.aymatech.com</div><div>📍 الكويت</div></div></div>
+<div class="contactFormArea"><h2>تواصل معنا</h2><div class="underline" style="margin-right:0"></div><p>يسعدنا الاستماع إلى احتياجاتك وسنعود إليك في أقرب وقت.</p>
+<form class="form" action="mailto:engaymanelhware31@gmail.com" method="post" enctype="text/plain"><div class="row"><div><label>الاسم الكامل</label><input name="name" placeholder="الاسم الكامل" required></div><div><label>اسم الشركة</label><input name="company" placeholder="اسم الشركة"></div></div><div class="row"><div><label>رقم الهاتف</label><input name="phone" placeholder="+965 رقم الهاتف" required></div><div><label>البريد الإلكتروني</label><input name="email" type="email" placeholder="البريد الإلكتروني"></div></div><label>نوع الخدمة المطلوبة</label><select name="service"><option>اختر الخدمة</option><option>البرامج المحاسبية</option><option>المواقع والحلول الرقمية</option><option>أنظمة إدارة الأعمال</option><option>الحلول السحابية</option><option>الدعم الفني والصيانة</option></select><label>رسالتك</label><textarea name="message" placeholder="رسالتك"></textarea><button class="btn primary send">إرسال الرسالة ←</button></form></div>
+</div></section>
+
+<footer><div class="wrap foot"><div><strong>AYMATECH</strong><br><small>Business Solutions • Smart Solutions. Better Business.</small></div><div><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#contact">تواصل معنا</a></div><div>© 2026 AYMATECH</div></div></footer>
+</body></html>
