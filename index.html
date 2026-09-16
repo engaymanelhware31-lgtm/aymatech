@@ -8,7 +8,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Tahoma,sans-serif;color:#10213b;background:#f6f9fc}a{text-decoration:none}
 .wrap{width:min(1410px,92%);margin:auto}.nav{height:82px;background:#061b3b;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 4%;position:sticky;top:0;z-index:20}
 .nav img{width:285px;height:74px;object-fit:contain}.links{display:flex;gap:34px;font-weight:700}.links a{color:#fff;font-size:15px}.links a:first-child{color:#16c2ff;border-bottom:3px solid #16c2ff;padding-bottom:22px}.lang{border:1px solid #55708e;border-radius:25px;padding:10px 18px}
-.hero{min-height:410px;color:#fff;background:linear-gradient(90deg,#061a38d9,#061a38b0),url('aymatech-approved-design.jpg') center 0/cover;display:flex;align-items:center}
+.hero{min-height:410px;color:#fff;background:radial-gradient(circle at 65% 45%,#0b72c855,transparent 28%),linear-gradient(135deg,#061a38,#062c5b);display:flex;align-items:center}
 .heroGrid{display:grid;grid-template-columns:1fr 1.2fr;gap:45px;align-items:center;padding:55px 0}.heroCopy h1{font-size:54px;line-height:1.15;margin:0 0 15px}.heroCopy h1 span{color:#08b9ff}.heroCopy p{font-size:18px;line-height:1.9;max-width:650px}.tag{font-size:25px;color:#16c2ff;line-height:1.5}.actions{display:flex;gap:14px;margin-top:25px}.btn{border-radius:30px;padding:14px 28px;font-weight:800;display:inline-block}.primary{background:linear-gradient(90deg,#087ff0,#12c5ff);color:#fff}.ghost{border:1px solid #fff;color:#fff}.globe{font-size:150px;text-align:center;filter:drop-shadow(0 0 30px #0bc5ff66)}
 .services{margin-top:-25px;position:relative;z-index:2}.serviceGrid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.service{background:#082951;border:1px solid #2d638d;border-radius:12px;padding:18px 10px;text-align:center;color:#fff;min-height:125px}.service .i{font-size:33px;color:#08c3ff}.service h3{font-size:15px;margin:7px 0}.service p{font-size:12px;margin:0;color:#dbe9f5}
 .contact{padding:50px 0}.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}.box{border-radius:20px;padding:32px}.formbox{background:#fff;box-shadow:0 8px 30px #0a234118}.infobox{background:#061b3b;color:#fff}.box h2{margin-top:0;font-size:28px}.box p{line-height:1.9;color:#687990}.infobox p{color:#c9d9ea}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:700;font-size:13px}.field input,.field select,.field textarea{border:1px solid #d5e0eb;border-radius:10px;padding:13px;font:inherit}.field textarea{min-height:115px}.contactCards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.contactCard{background:#0a2a52;border:1px solid #315a80;border-radius:14px;padding:16px}.contactCard b{display:block;font-size:17px}.contactCard small{color:#a9bfd5}.status{font-weight:700;margin-top:10px}
@@ -17,7 +17,7 @@ footer{background:#04152e;color:#fff;padding:25px 0}.foot{display:flex;align-ite
 @media(max-width:600px){.nav{height:70px}.nav img{width:190px}.serviceGrid{grid-template-columns:repeat(2,1fr)}.heroCopy h1{font-size:39px}.heroCopy p{font-size:15px}.formgrid,.contactCards{grid-template-columns:1fr}.field.full{grid-column:auto}.actions{flex-wrap:wrap}}
 </style></head>
 <body>
-<header class="nav"><a href="#home"><img src="aymatech-logo.jpg" alt="AYMATECH"></a><nav class="links"><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#process">طريقة العمل</a><a href="#contact">تواصل معنا</a></nav><span class="lang">🌐 EN</span></header>
+<header class="nav"><a href="#home"><img src="aymatech-logo.jpg" alt="AYMATECH"></a><nav class="links" aria-label="القائمة الرئيسية"><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#process">طريقة العمل</a><a href="#contact">تواصل معنا</a></nav><a class="lang" href="#home" aria-label="العودة للرئيسية">🌐 EN</a></header>
 
 <main id="home">
 <section class="hero"><div class="wrap heroGrid"><div class="globe">🌐</div><div class="heroCopy">
@@ -26,7 +26,7 @@ footer{background:#04152e;color:#fff;padding:25px 0}.foot{display:flex;align-ite
 <div class="actions"><a class="btn primary" href="#contact">← تواصل معنا</a><a class="btn ghost" href="#services">استكشف خدماتنا</a></div>
 </div></div></section>
 
-<section class="services" id="services"><div class="wrap serviceGrid">
+<section class="sectionAnchor" id="about" style="height:1px;margin-top:-1px"></section><section class="services" id="services"><div class="wrap serviceGrid">
 <div class="service"><div class="i">👥</div><h3>الاستشارات التقنية</h3><p>Business Consulting</p></div>
 <div class="service"><div class="i">⚙</div><h3>أتمتة الأعمال</h3><p>Process Automation</p></div>
 <div class="service"><div class="i">▥</div><h3>تحليل البيانات والتقارير</h3><p>Data & Analytics</p></div>
@@ -35,7 +35,7 @@ footer{background:#04152e;color:#fff;padding:25px 0}.foot{display:flex;align-ite
 <div class="service"><div class="i">◎</div><h3>تطوير المواقع الإلكترونية</h3><p>Web Development</p></div>
 </div></section>
 
-<section class="contact" id="contact"><div class="wrap contactGrid">
+<section class="sectionAnchor" id="work" style="height:1px;margin-top:-1px"></section><section class="sectionAnchor" id="process" style="height:1px;margin-top:-1px"></section><section class="contact" id="contact"><div class="wrap contactGrid">
 <div class="box formbox"><h2>تواصل معنا</h2><p>يسعدنا الاستماع إلى أفكارك ومناقشة احتياجاتك. سنتواصل معك في أقرب وقت ممكن.</p>
 <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyJDuLlIA3bRurbYw9ocbgJ1KVTfjuPlefjSHYWqavaBf9MPP_bmkdyomSOjYT2qZsr/exec" method="POST" target="formFrame">
 <div class="formgrid"><div class="field"><label>الاسم الكامل *</label><input name="name" required></div><div class="field"><label>البريد الإلكتروني</label><input name="email" type="email"></div><div class="field"><label>رقم الهاتف *</label><input name="phone" required></div><div class="field"><label>الخدمة المطلوبة</label><select name="service"><option value="">اختر الخدمة</option><option>تطوير المواقع الإلكترونية</option><option>الأنظمة والبرمجيات</option><option>التكامل و APIs</option><option>تحليل البيانات والتقارير</option><option>أتمتة الأعمال</option><option>الاستشارات التقنية</option></select></div><div class="field full"><label>رسالتك</label><textarea name="message" placeholder="اكتب لنا نبذة عن مشروعك أو احتياجك..."></textarea></div><div class="field full"><button class="btn primary" type="submit">إرسال الرسالة ✈</button><div id="status" class="status"></div></div></div></form></div>
@@ -51,6 +51,15 @@ footer{background:#04152e;color:#fff;padding:25px 0}.foot{display:flex;align-ite
 <footer><div class="wrap foot"><img src="aymatech-logo.jpg" alt="AYMATECH"><span>© 2026 AYMATECH. All rights reserved.</span></div></footer>
 <iframe name="formFrame" id="formFrame" style="display:none"></iframe>
 <script>
+document.querySelectorAll('.links a,.lang,[href="#contact"],[href="#services"]').forEach(function(link){
+  link.addEventListener('click',function(e){
+    const id=this.getAttribute('href');
+    if(id && id.startsWith('#')){
+      const target=document.querySelector(id);
+      if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
+    }
+  });
+});
 const f=document.getElementById('contactForm'),s=document.getElementById('status'),b=f.querySelector('button'),frame=document.getElementById('formFrame');
 let sent=false;
 f.addEventListener('submit',()=>{sent=true;b.disabled=true;b.textContent='جاري الإرسال...';s.textContent=''});
