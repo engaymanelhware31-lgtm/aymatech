@@ -15,6 +15,13 @@
 footer{background:#04152e;color:#fff;padding:25px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px}.foot img{width:240px}
 @media(max-width:1000px){.links{display:none}.serviceGrid{grid-template-columns:repeat(3,1fr)}.heroGrid,.contactGrid{grid-template-columns:1fr}.globe{font-size:100px}.nav img{width:230px}}
 @media(max-width:600px){.nav{height:70px}.nav img{width:190px}.serviceGrid{grid-template-columns:repeat(2,1fr)}.heroCopy h1{font-size:39px}.heroCopy p{font-size:15px}.formgrid,.contactCards{grid-template-columns:1fr}.field.full{grid-column:auto}.actions{flex-wrap:wrap}}
+
+.contentSection{padding:65px 0;background:#fff}.contentSection.light{background:#f4f8fc}
+.sectionTitle{text-align:center;margin-bottom:35px}.sectionTitle span{color:#08aef2;font-size:12px;font-weight:800;letter-spacing:1px}.sectionTitle h2{font-size:36px;margin:7px 0;color:#10213b}.sectionTitle i{display:block;width:55px;height:4px;background:#08b9ff;border-radius:4px;margin:auto}
+.aboutGrid{display:grid;grid-template-columns:1.4fr .8fr;gap:25px;align-items:stretch}.aboutGrid h3{font-size:25px;margin:0 0 14px}.aboutGrid p{line-height:2;color:#687990;font-size:15px}.infoCard{background:#061b3b;color:#fff;border-radius:18px;padding:30px;display:flex;flex-direction:column;justify-content:center}.infoCard b{font-size:22px;color:#16c2ff}.infoCard p{color:#c8d8e9;margin-top:10px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.workCard{background:#fff;border:1px solid #dbe6f1;border-radius:16px;padding:28px;text-align:center;box-shadow:0 8px 25px #0a23410d}.workCard div{font-size:38px}.workCard h3{margin:12px 0 7px}.workCard p{color:#687990;line-height:1.8;font-size:13px}
+.steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.steps4>div{background:#fff;border:1px solid #dce7f1;border-radius:16px;padding:25px;text-align:center}.steps4 strong{display:grid;place-items:center;width:50px;height:50px;border-radius:50%;margin:auto;background:linear-gradient(135deg,#087ff0,#12c5ff);color:#fff}.steps4 h3{margin:12px 0 6px}.steps4 p{color:#687990;font-size:13px;line-height:1.8}
+@media(max-width:800px){.aboutGrid,.cards3,.steps4{grid-template-columns:1fr 1fr}}@media(max-width:550px){.aboutGrid,.cards3,.steps4{grid-template-columns:1fr}.contentSection{padding:50px 0}.sectionTitle h2{font-size:30px}}
 </style></head>
 <body>
 <header class="nav"><a href="#home"><img src="aymatech-logo.jpg" alt="AYMATECH"></a><nav class="links" aria-label="القائمة الرئيسية"><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#process">طريقة العمل</a><a href="#contact">تواصل معنا</a></nav><a class="lang" href="#home" aria-label="العودة للرئيسية">🌐 EN</a></header>
@@ -35,7 +42,44 @@ footer{background:#04152e;color:#fff;padding:25px 0}.foot{display:flex;align-ite
 <div class="service"><div class="i">◎</div><h3>تطوير المواقع الإلكترونية</h3><p>Web Development</p></div>
 </div></section>
 
-<section class="sectionAnchor" id="work" style="height:1px;margin-top:-1px"></section><section class="sectionAnchor" id="process" style="height:1px;margin-top:-1px"></section><section class="contact" id="contact"><div class="wrap contactGrid">
+<section class="sectionAnchor" id="work" style="height:1px;margin-top:-1px"></section><section class="sectionAnchor" id="process" style="height:1px;margin-top:-1px"></section>
+<section id="about" class="contentSection">
+  <div class="wrap">
+    <div class="sectionTitle"><span>ABOUT AYMATECH</span><h2>من نحن</h2><i></i></div>
+    <div class="aboutGrid">
+      <div>
+        <h3>حلول تقنية مصممة للأعمال</h3>
+        <p>AYMATECH Business Solutions تقدم حلولًا تقنية ورقمية تساعد الشركات والمؤسسات على تطوير أعمالها، تنظيم عملياتها، وتحسين تجربة المستخدم.</p>
+        <p>نبدأ بفهم احتياج العمل، ثم نحلل المتطلبات ونبني الحل المناسب بطريقة عملية وقابلة للتطوير.</p>
+      </div>
+      <div class="infoCard"><b>Smart Solutions. Better Business.</b><p>نحو أعمال أكثر كفاءة وابتكارًا من خلال حلول تقنية واضحة وعملية.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="contentSection light">
+  <div class="wrap">
+    <div class="sectionTitle"><span>OUR WORK</span><h2>أعمالنا</h2><i></i></div>
+    <div class="cards3">
+      <article class="workCard"><div>🌐</div><h3>المواقع الإلكترونية</h3><p>تصميم وتطوير مواقع احترافية متجاوبة مع الهوية التجارية.</p></article>
+      <article class="workCard"><div>💻</div><h3>الأنظمة والبرمجيات</h3><p>حلول وبرامج تساعد على تنظيم العمليات وإدارة الأعمال.</p></article>
+      <article class="workCard"><div>🔗</div><h3>التكامل والربط</h3><p>ربط الأنظمة والخدمات والبيانات لتحسين تدفق المعلومات.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="contentSection">
+  <div class="wrap">
+    <div class="sectionTitle"><span>OUR PROCESS</span><h2>طريقة العمل</h2><i></i></div>
+    <div class="steps4">
+      <div><strong>01</strong><h3>نفهم</h3><p>نفهم احتياجك والتحديات التي تواجه العمل.</p></div>
+      <div><strong>02</strong><h3>نحلل</h3><p>نحدد المتطلبات ونختار الحل المناسب.</p></div>
+      <div><strong>03</strong><h3>نطور</h3><p>نبني الحل ونختبره قبل الإطلاق.</p></div>
+      <div><strong>04</strong><h3>نطلق</h3><p>نطلق المشروع ونواصل المتابعة والتطوير.</p></div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact"><div class="wrap contactGrid">
 <div class="box formbox"><h2>تواصل معنا</h2><p>يسعدنا الاستماع إلى أفكارك ومناقشة احتياجاتك. سنتواصل معك في أقرب وقت ممكن.</p>
 <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyJDuLlIA3bRurbYw9ocbgJ1KVTfjuPlefjSHYWqavaBf9MPP_bmkdyomSOjYT2qZsr/exec" method="POST" target="formFrame">
 <div class="formgrid"><div class="field"><label>الاسم الكامل *</label><input name="name" required></div><div class="field"><label>البريد الإلكتروني</label><input name="email" type="email"></div><div class="field"><label>رقم الهاتف *</label><input name="phone" required></div><div class="field"><label>الخدمة المطلوبة</label><select name="service"><option value="">اختر الخدمة</option><option>تطوير المواقع الإلكترونية</option><option>الأنظمة والبرمجيات</option><option>التكامل و APIs</option><option>تحليل البيانات والتقارير</option><option>أتمتة الأعمال</option><option>الاستشارات التقنية</option></select></div><div class="field full"><label>رسالتك</label><textarea name="message" placeholder="اكتب لنا نبذة عن مشروعك أو احتياجك..."></textarea></div><div class="field full"><button class="btn primary" type="submit">إرسال الرسالة ✈</button><div id="status" class="status"></div></div></div></form></div>
