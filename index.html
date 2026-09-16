@@ -97,29 +97,37 @@ document.addEventListener("DOMContentLoaded", function () {
   frame.style.display = "none";
   document.body.appendChild(frame);
 
+  let submitting = false;
+
+  frame.addEventListener("load", function () {
+    if (!submitting) return;
+
+    if (status) {
+      status.textContent = "✓ تم إرسال طلبك بنجاح، وسنتواصل معك قريبًا.";
+      status.className = "form-status success";
+    }
+
+    if (button) {
+      button.disabled = false;
+      button.textContent = "إرسال الرسالة ←";
+    }
+
+    form.reset();
+    submitting = false;
+  });
+
   form.addEventListener("submit", function () {
+    submitting = true;
+
     if (button) {
       button.disabled = true;
       button.textContent = "جاري الإرسال...";
     }
+
     if (status) {
-      status.textContent = "";
+      status.textContent = "جاري إرسال طلبك...";
       status.className = "form-status";
     }
-
-    // The form is posted directly to Google Apps Script in a hidden iframe,
-    // so the visitor remains on the AYMATECH page.
-    setTimeout(function () {
-      form.reset();
-      if (status) {
-        status.textContent = "✓ تم إرسال طلبك بنجاح، وسنتواصل معك قريبًا.";
-        status.className = "form-status success";
-      }
-      if (button) {
-        button.disabled = false;
-        button.textContent = "إرسال الرسالة ←";
-      }
-    }, 1200);
   });
 });
 </script>
