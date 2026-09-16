@@ -1,257 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>AYMATECH Business Solutions | Smart Solutions. Better Business.</title>
-<meta name="description" content="AYMATECH Business Solutions — حلول تقنية ورقمية لتطوير الأعمال في العالم العربي والأسواق العالمية.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AYMATECH Business Solutions</title>
+<meta name="description" content="AYMATECH Business Solutions — Smart Solutions. Better Business.">
 <style>
-:root{--navy:#061936;--navy2:#0a2854;--blue:#087fe8;--cyan:#18c1ff;--text:#13233d;--muted:#64748b;--light:#f5f8fc;--white:#fff;--gold:#d8b45a}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,"Tahoma",sans-serif;color:var(--text);background:#fff;overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-.wrap{width:min(1160px,92%);margin:auto}
-header{position:sticky;top:0;z-index:50;background:rgba(6,25,54,.96);backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18}
-.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logoImg{width:190px;height:auto;display:block}
-nav{display:flex;gap:24px;align-items:center}
-nav a{color:#dce8f7;font-size:14px;font-weight:700;transition:.2s}
-nav a:hover{color:var(--cyan)}
-.lang{border:1px solid #ffffff35;color:#fff;padding:9px 14px;border-radius:22px;font-weight:700;font-size:13px}
-.hero{min-height:650px;background:linear-gradient(135deg,var(--navy),#0b3770);position:relative;color:#fff;display:flex;align-items:center}
-.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 30%,#18c1ff22,transparent 35%),linear-gradient(90deg,#061936f0,#061936cc)}
-.heroInner{position:relative;z-index:2;padding:92px 0;display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}
-.eyebrow{color:#5dd7ff;font-size:14px;font-weight:800;letter-spacing:1px;margin-bottom:14px}
-h1{font-size:64px;line-height:1;letter-spacing:-2px;margin-bottom:10px}
-h1 span{color:var(--cyan)}
-.hero h2{font-size:24px;letter-spacing:4px;color:#c9d8ec;margin-bottom:14px}
-.tag{font-size:27px;color:#fff;font-weight:800;margin-bottom:10px}
-.arabicTag{font-size:25px;color:#5dd7ff;font-weight:800;margin-bottom:18px}
-.hero p{font-size:17px;line-height:2;color:#d8e4f3;max-width:650px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border-radius:30px;font-weight:800;font-size:14px}
-.primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 12px 30px #087fe844}
-.outline{border:1px solid #5dd7ff;color:#fff}
-.heroVisual{min-height:400px;border:1px solid #ffffff20;border-radius:28px;overflow:hidden;position:relative;background:#0a2854}
-.heroVisual img{width:100%;height:100%;min-height:400px;object-fit:cover;opacity:.62}
-.visualOverlay{position:absolute;inset:0;background:linear-gradient(135deg,#06193655,#087fe855)}
-.visualCard{position:absolute;right:28px;bottom:28px;left:28px;padding:22px;border-radius:18px;background:#061936dd;border:1px solid #ffffff22}
-.visualCard strong{font-size:20px}.visualCard p{font-size:13px;color:#c9d8ec;margin-top:7px}
-.trust{background:#fff;border-bottom:1px solid #e8eef6}
-.trustGrid{display:grid;grid-template-columns:repeat(4,1fr);padding:22px 0}
-.trustItem{text-align:center;border-left:1px solid #e3eaf3;padding:10px}.trustItem:last-child{border:0}
-.trustItem b{display:block;font-size:17px}.trustItem span{font-size:12px;color:var(--muted)}
-.section{padding:82px 0}
-.section.dark{background:var(--navy);color:#fff}
-.section.light{background:var(--light)}
-.sectionHead{text-align:center;margin-bottom:42px}.sectionHead .eyebrow{margin-bottom:7px}
-.sectionHead h2{font-size:38px}.sectionHead p{max-width:680px;margin:12px auto 0;color:var(--muted);line-height:1.9}
-.dark .sectionHead p{color:#b9c9de}
-.underline{width:62px;height:4px;border-radius:5px;background:linear-gradient(90deg,var(--blue),var(--cyan));margin:13px auto}
-.servicesGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{border:1px solid #ffffff18;background:linear-gradient(145deg,#0a2f63,#071f45);padding:28px;border-radius:18px;min-height:205px;transition:.2s}
-.card:hover{transform:translateY(-4px);border-color:#18c1ff77}
-.icon{font-size:34px;color:#5dd7ff;margin-bottom:14px}
-.card h3{font-size:18px;margin-bottom:8px}.card p{font-size:13px;color:#c7d7ea;line-height:1.9}
-.aboutGrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.aboutText h2{font-size:42px;margin-bottom:12px}.aboutText p{color:var(--muted);line-height:2;margin:12px 0;font-size:15px}
-.aboutImg{border-radius:24px;overflow:hidden;box-shadow:0 20px 55px #06193618}.aboutImg img{width:100%;display:block}
-.features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}
-.feature{padding:17px;border:1px solid #e1eaf5;border-radius:14px;background:#fff}.feature b{display:block;margin-bottom:5px}.feature span{font-size:12px;color:var(--muted)}
-.workGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.work{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #e4ebf4}.work img{width:100%;height:180px;object-fit:cover}.work div{padding:20px}.work h3{margin-bottom:7px}.work p{font-size:13px;color:var(--muted);line-height:1.8}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{position:relative;text-align:center;padding:25px 16px}.num{width:48px;height:48px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:900}
-.step h3{margin-bottom:7px}.step p{font-size:13px;color:var(--muted);line-height:1.8}
-.global{background:linear-gradient(135deg,#061936,#0a3d78);color:#fff;text-align:center}.global h2{font-size:42px}.global p{max-width:720px;margin:15px auto;line-height:2;color:#d6e3f3}
-.contactGrid{display:grid;grid-template-columns:.8fr 1.2fr;background:var(--navy);border-radius:26px;overflow:hidden}
-.contactInfo{padding:55px;color:#fff}.contactInfo h2{font-size:36px;margin:12px 0}.contactInfo p{color:#bcd0e7;line-height:2}.contactItem{display:flex;gap:12px;margin-top:20px;align-items:center}.contactItem b{color:#fff}.contactForm{background:#fff;padding:45px}
-.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:14px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:7px}.field input,.field textarea,.field select{width:100%;border:1px solid #d9e2ee;border-radius:10px;padding:12px;font-family:inherit;outline:none}.field textarea{min-height:130px;resize:vertical}.full{grid-column:1/-1}.form-status{margin-top:12px;font-size:13px;font-weight:700}
-.settings{padding:25px 0;background:#eef5fb}.settingsBox{display:flex;justify-content:space-between;align-items:center;gap:25px}.settings h2{font-size:22px}.settings p{font-size:13px;color:var(--muted);margin-top:5px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tags span{background:#fff;border:1px solid #dce7f2;padding:8px 12px;border-radius:20px;font-size:11px;font-weight:700}
-footer{background:#031126;color:#fff;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#9fb4cf}
-@media(max-width:900px){nav{display:none}.heroInner{grid-template-columns:1fr}.heroVisual{min-height:300px}.heroVisual img{min-height:300px}.servicesGrid,.workGrid{grid-template-columns:1fr 1fr}.aboutGrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.contactGrid{grid-template-columns:1fr}.trustGrid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.nav{height:70px}.logoImg{width:155px}.heroInner{padding:65px 0}.hero h1{font-size:48px}.tag,.arabicTag{font-size:21px}.hero h2{font-size:18px}.hero p{font-size:15px}.servicesGrid,.workGrid,.steps,.features,.formGrid{grid-template-columns:1fr}.section{padding:60px 0}.sectionHead h2,.aboutText h2,.global h2{font-size:31px}.contactInfo,.contactForm{padding:32px 24px}.settingsBox,.foot{flex-direction:column;text-align:center}.trustGrid{grid-template-columns:1fr 1fr}}
-</style>
-</head>
-<body>
-<header><div class="wrap nav">
-<a href="#home"><img src="aymatech-logo.jpg" class="logoImg" alt="AYMATECH Business Solutions"></a>
-<nav><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#why">لماذا AYMATECH</a><a href="#work">أعمالنا</a><a href="#process">طريقة العمل</a><a href="#contact">تواصل معنا</a></nav>
-<a class="lang" href="#" id="languageToggle" aria-label="Change language">EN ◉</a>
-</div></header>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Tahoma,sans-serif;color:#10213b;background:#f6f9fc}a{text-decoration:none}
+.wrap{width:min(1410px,92%);margin:auto}.nav{height:82px;background:#061b3b;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 4%;position:relative;z-index:2}
+.nav img{width:285px;height:74px;object-fit:contain}.links{display:flex;gap:34px;font-weight:700}.links a{color:#fff;font-size:15px}.links a:first-child{color:#16c2ff;border-bottom:3px solid #16c2ff;padding-bottom:22px}.lang{border:1px solid #55708e;border-radius:25px;padding:10px 18px}
+.hero{min-height:410px;color:#fff;background:radial-gradient(circle at 65% 45%,#0b72c855,transparent 28%),linear-gradient(135deg,#061a38,#062c5b);display:flex;align-items:center}
+.heroGrid{display:grid;grid-template-columns:1fr 1.2fr;gap:45px;align-items:center;padding:55px 0}.heroCopy h1{font-size:54px;line-height:1.15;margin:0 0 15px}.heroCopy h1 span{color:#08b9ff}.heroCopy p{font-size:18px;line-height:1.9;max-width:650px}.tag{font-size:25px;color:#16c2ff;line-height:1.5}.actions{display:flex;gap:14px;margin-top:25px}.btn{border-radius:30px;padding:14px 28px;font-weight:800;display:inline-block}.primary{background:linear-gradient(90deg,#087ff0,#12c5ff);color:#fff}.ghost{border:1px solid #fff;color:#fff}.globe{font-size:150px;text-align:center;filter:drop-shadow(0 0 30px #0bc5ff66)}.heroVisual{min-height:330px;border:1px solid #ffffff22;border-radius:24px;overflow:hidden;background:#061b3b;box-shadow:0 20px 50px #061b3b33}.heroVisual img{width:100%;height:330px;display:block;object-fit:cover}
+.services{margin-top:-25px;position:relative;z-index:2}.serviceGrid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.service{background:#082951;border:1px solid #2d638d;border-radius:12px;padding:18px 10px;text-align:center;color:#fff;min-height:125px}.service .i{font-size:33px;color:#08c3ff}.service h3{font-size:15px;margin:7px 0}.service p{font-size:12px;margin:0;color:#dbe9f5}
+.contact{padding:50px 0}.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}.box{border-radius:20px;padding:32px}.formbox{background:#fff;box-shadow:0 8px 30px #0a234118}.infobox{background:#061b3b;color:#fff}.box h2{margin-top:0;font-size:28px}.box p{line-height:1.9;color:#687990}.infobox p{color:#c9d9ea}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:700;font-size:13px}.field input,.field select,.field textarea{border:1px solid #d5e0eb;border-radius:10px;padding:13px;font:inherit}.field textarea{min-height:115px}.contactCards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.contactCard{background:#0a2a52;border:1px solid #315a80;border-radius:14px;padding:16px}.contactCard b{display:block;font-size:17px}.contactCard small{color:#a9bfd5}.status{font-weight:700;margin-top:10px}
+footer{background:#04152e;color:#fff;padding:25px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px}.foot img{width:240px}
+@media(max-width:1000px){.links{display:none}.serviceGrid{grid-template-columns:repeat(3,1fr)}.heroGrid,.contactGrid{grid-template-columns:1fr}.globe{font-size:100px}.heroVisual{min-height:260px}.heroVisual img{height:260px}.nav img{width:230px}}
+@media(max-width:600px){.nav{height:70px}.nav img{width:190px}.serviceGrid{grid-template-columns:repeat(2,1fr)}.heroCopy h1{font-size:39px}.heroCopy p{font-size:15px}.formgrid,.contactCards{grid-template-columns:1fr}.field.full{grid-column:auto}.actions{flex-wrap:wrap}}
 
-<section class="hero" id="home">
-<div class="wrap heroInner">
-<div>
-<div class="eyebrow">AYMATECH BUSINESS SOLUTIONS</div>
-<h1>AYMA<span>TECH</span></h1>
-<h2>Business Solutions</h2>
-<div class="tag">Smart Solutions. Better Business.</div>
-<div class="arabicTag">حلول ذكية .. لأعمال أفضل</div>
-<p>نبني حلولًا تقنية ورقمية تساعد الشركات والمؤسسات على تطوير أعمالها، تبسيط عملياتها، وتحويل أفكارها إلى حلول عملية قابلة للنمو.</p>
-<div class="actions"><a class="btn primary" href="#contact">ابدأ مشروعك معنا ←</a><a class="btn outline" href="https://wa.me/96555822938" target="_blank">تواصل عبر واتساب</a></div>
-</div>
-<div class="heroVisual"><img src="aymatech-approved-design.jpg" alt="AYMATECH digital solutions"><div class="visualOverlay"></div><div class="visualCard"><strong>Technology • Business • Growth</strong><p>حلول تقنية للأعمال في العالم العربي والأسواق العالمية.</p></div></div>
-</div>
+.contentSection{padding:65px 0;background:#fff}.contentSection.light{background:#f4f8fc}
+.sectionTitle{text-align:center;margin-bottom:35px}.sectionTitle span{color:#08aef2;font-size:12px;font-weight:800;letter-spacing:1px}.sectionTitle h2{font-size:36px;margin:7px 0;color:#10213b}.sectionTitle i{display:block;width:55px;height:4px;background:#08b9ff;border-radius:4px;margin:auto}
+.aboutGrid{display:grid;grid-template-columns:1.4fr .8fr;gap:25px;align-items:stretch}.aboutGrid h3{font-size:25px;margin:0 0 14px}.aboutGrid p{line-height:2;color:#687990;font-size:15px}.infoCard{background:#061b3b;color:#fff;border-radius:18px;padding:30px;display:flex;flex-direction:column;justify-content:center}.infoCard b{font-size:22px;color:#16c2ff}.infoCard p{color:#c8d8e9;margin-top:10px}.aboutVisual{position:relative;border-radius:18px;overflow:hidden;min-height:260px;background:#061b3b;box-shadow:0 18px 45px #061b3b22}.aboutVisual img{width:100%;height:100%;min-height:260px;object-fit:cover;display:block}.aboutCaption{position:absolute;right:18px;left:18px;bottom:18px;background:#061b3bdd;color:#fff;border-radius:14px;padding:16px}.aboutCaption b{display:block;color:#16c2ff;font-size:20px}.aboutCaption span{display:block;color:#d5e3f2;margin-top:6px;font-size:13px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.workCard{background:#fff;border:1px solid #dbe6f1;border-radius:16px;overflow:hidden;text-align:center;box-shadow:0 8px 25px #0a23410d}.workCard img{width:100%;height:190px;object-fit:cover;display:block}.workCard h3,.workCard p{margin-left:22px;margin-right:22px}.workCard h3{margin-top:18px}.workCard div{font-size:38px}.workCard h3{margin:12px 0 7px}.workCard p{color:#687990;line-height:1.8;font-size:13px}
+.steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.steps4>div{background:#fff;border:1px solid #dce7f1;border-radius:16px;padding:25px;text-align:center}.steps4 strong{display:grid;place-items:center;width:50px;height:50px;border-radius:50%;margin:auto;background:linear-gradient(135deg,#087ff0,#12c5ff);color:#fff}.steps4 h3{margin:12px 0 6px}.steps4 p{color:#687990;font-size:13px;line-height:1.8}
+@media(max-width:800px){.aboutGrid,.cards3,.steps4{grid-template-columns:1fr 1fr}}@media(max-width:550px){.aboutGrid,.cards3,.steps4{grid-template-columns:1fr}.contentSection{padding:50px 0}.sectionTitle h2{font-size:30px}}
+
+.contentSection,.contact{position:relative;display:block;clear:both}
+.contentSection{min-height:300px}
+.english .heroGrid{grid-template-columns:1fr 1.2fr}.english .contactGrid{direction:ltr}.english .formgrid{direction:ltr}.english .sectionTitle{text-align:center}.english .serviceGrid{direction:ltr}.english .links{direction:ltr}.english .contactCards{direction:ltr}
+</style></head>
+<body>
+<header class="nav"><a href="#home"><img src="aymatech-logo.jpg" alt="AYMATECH"></a><nav class="links" aria-label="القائمة الرئيسية"><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#process">طريقة العمل</a><a href="#contact">تواصل معنا</a></nav><button class="lang" id="langToggle" type="button" aria-label="تغيير اللغة">🌐 EN</button></header>
+
+<main id="home">
+<section class="hero"><div class="wrap heroGrid"><div class="heroVisual"><img src="aymatech-global-hero.jpg" alt="AYMATECH Business Solutions"></div><div class="heroCopy">
+<div class="tag">حلول تقنية<br><b>لتطوير أعمالك</b></div>
+<p>نحو مستقبل أكثر كفاءة وابتكارًا عبر حلول تقنية متكاملة تلبي احتياجات أعمالك وتساعدك على النمو.</p>
+<div class="actions"><a class="btn primary" href="#contact">← تواصل معنا</a><a class="btn ghost" href="#services">استكشف خدماتنا</a></div>
+</div></div></section>
+
+<section class="services" id="services"><div class="wrap serviceGrid">
+<div class="service"><div class="i">👥</div><h3>الاستشارات التقنية</h3><p>Business Consulting</p></div>
+<div class="service"><div class="i">⚙</div><h3>أتمتة الأعمال</h3><p>Process Automation</p></div>
+<div class="service"><div class="i">▥</div><h3>تحليل البيانات والتقارير</h3><p>Data & Analytics</p></div>
+<div class="service"><div class="i">⌘</div><h3>التكامل والربط</h3><p>Integration & APIs</p></div>
+<div class="service"><div class="i">&lt;/&gt;</div><h3>الأنظمة والبرمجيات</h3><p>Software Solutions</p></div>
+<div class="service"><div class="i">◎</div><h3>تطوير المواقع الإلكترونية</h3><p>Web Development</p></div>
+</div></section>
+
+
+<section id="about" class="contentSection">
+  <div class="wrap">
+    <div class="sectionTitle"><span>ABOUT AYMATECH</span><h2>من نحن</h2><i></i></div>
+    <div class="aboutGrid">
+      <div>
+        <h3>حلول تقنية مصممة للأعمال</h3>
+        <p>AYMATECH Business Solutions تقدم حلولًا تقنية ورقمية تساعد الشركات والمؤسسات على تطوير أعمالها، تنظيم عملياتها، وتحسين تجربة المستخدم.</p>
+        <p>نبدأ بفهم احتياج العمل، ثم نحلل المتطلبات ونبني الحل المناسب بطريقة عملية وقابلة للتطوير.</p>
+      </div>
+      <div class="aboutVisual"><img src="aymatech-business.jpg" alt="AYMATECH Business Solutions"><div class="aboutCaption"><b>Smart Solutions. Better Business.</b><span>حلول تقنية للأعمال في العالم العربي والأسواق العالمية.</span></div></div>
+    </div>
+  </div>
 </section>
 
-<div class="trust"><div class="wrap trustGrid">
-<div class="trustItem"><b>نفهم احتياجك</b><span>قبل بناء الحل</span></div>
-<div class="trustItem"><b>حلول عملية</b><span>مصممة للأعمال</span></div>
-<div class="trustItem"><b>قابلة للتوسع</b><span>مع نمو مشروعك</span></div>
-<div class="trustItem"><b>دعم مستمر</b><span>من البداية إلى ما بعد الإطلاق</span></div>
-</div></div>
+<section id="work" class="contentSection light">
+  <div class="wrap">
+    <div class="sectionTitle"><span>OUR WORK</span><h2>أعمالنا</h2><i></i></div>
+    <div class="cards3">
+      <article class="workCard"><img src="aymatech-business.jpg" alt="المواقع الإلكترونية"><h3>مواقع الشركات</h3><p>تصميم وتطوير مواقع احترافية بهوية واضحة وتجربة متجاوبة.</p></article>
+      <article class="workCard"><img src="aymatech-global.jpg" alt="الهوية والحضور الرقمي"><h3>الهوية والحضور الرقمي</h3><p>بناء حضور رقمي متناسق يدعم صورة العلامة التجارية.</p></article>
+      <article class="workCard"><img src="aymatech-global-hero.jpg" alt="الحلول الرقمية"><h3>الحلول الرقمية</h3><p>تصميم حلول تقنية تساعد المؤسسات على تنظيم أعمالها وتطويرها.</p></article>
+    </div>
+  </div>
+</section>
 
-<section class="section" id="about"><div class="wrap aboutGrid">
-<div class="aboutText"><div class="eyebrow">WHO WE ARE</div><h2>نبني حلولًا تخدم الأعمال</h2><div class="underline" style="margin-right:0"></div>
-<p><b>AYMATECH Business Solutions</b> شركة متخصصة في الحلول الرقمية والتقنية التي تساعد الشركات والمؤسسات على تطوير أعمالها وتحسين الكفاءة.</p>
-<p>نبدأ من فهم التحدي، ثم نحلل الاحتياج ونبني الحل المناسب، مع التركيز على البساطة والاعتمادية وإمكانية التطوير مستقبلًا.</p>
-<a class="btn primary" href="#contact">تحدث معنا ←</a></div>
-<div class="aboutImg"><img src="aymatech-approved-design.jpg" alt="AYMATECH Business Solutions"></div>
-</div></section>
+<section id="process" class="contentSection">
+  <div class="wrap">
+    <div class="sectionTitle"><span>OUR PROCESS</span><h2>طريقة العمل</h2><i></i></div>
+    <div class="steps4">
+      <div><strong>01</strong><h3>نفهم</h3><p>نفهم احتياجك والتحديات التي تواجه العمل.</p></div>
+      <div><strong>02</strong><h3>نحلل</h3><p>نحدد المتطلبات ونختار الحل المناسب.</p></div>
+      <div><strong>03</strong><h3>نطور</h3><p>نبني الحل ونختبره قبل الإطلاق.</p></div>
+      <div><strong>04</strong><h3>نطلق</h3><p>نطلق المشروع ونواصل المتابعة والتطوير.</p></div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact"><div class="wrap contactGrid">
+<div class="box formbox"><h2>تواصل معنا</h2><p>يسعدنا الاستماع إلى أفكارك ومناقشة احتياجاتك. سنتواصل معك في أقرب وقت ممكن.</p>
+<form id="contactForm" action="https://script.google.com/macros/s/AKfycbyJDuLlIA3bRurbYw9ocbgJ1KVTfjuPlefjSHYWqavaBf9MPP_bmkdyomSOjYT2qZsr/exec" method="POST" target="formFrame">
+<div class="formgrid"><div class="field"><label>الاسم الكامل *</label><input name="name" required></div><div class="field"><label>البريد الإلكتروني</label><input name="email" type="email"></div><div class="field"><label>رقم الهاتف *</label><input name="phone" required></div><div class="field"><label>الخدمة المطلوبة</label><select name="service"><option value="">اختر الخدمة</option><option>تطوير المواقع الإلكترونية</option><option>الأنظمة والبرمجيات</option><option>التكامل و APIs</option><option>تحليل البيانات والتقارير</option><option>أتمتة الأعمال</option><option>الاستشارات التقنية</option></select></div><div class="field full"><label>رسالتك</label><textarea name="message" placeholder="اكتب لنا نبذة عن مشروعك أو احتياجك..."></textarea></div><div class="field full"><button class="btn primary" type="submit">إرسال الرسالة ✈</button><div id="status" class="status"></div></div></div></form></div>
 
-<section class="section dark" id="services"><div class="wrap">
-<div class="sectionHead"><div class="eyebrow">WHAT WE DO</div><h2>خدماتنا</h2><div class="underline"></div><p>مجموعة من الحلول التقنية التي تغطي احتياجات الأعمال من الفكرة إلى التشغيل والتطوير.</p></div>
-<div class="servicesGrid">
-<div class="card"><div class="icon">🌐</div><h3>تطوير المواقع الإلكترونية</h3><p>مواقع احترافية سريعة ومتجاوبة تعكس هوية الشركة وتدعم نموها الرقمي.</p></div>
-<div class="card"><div class="icon">💻</div><h3>الأنظمة والبرمجيات</h3><p>حلول وبرامج مخصصة لتنظيم العمليات اليومية وتحسين إدارة الأعمال.</p></div>
-<div class="card"><div class="icon">🔗</div><h3>التكامل و APIs</h3><p>ربط الأنظمة والخدمات والبيانات لتقليل العمل اليدوي وتحسين تدفق المعلومات.</p></div>
-<div class="card"><div class="icon">📊</div><h3>تحليل البيانات والتقارير</h3><p>تنظيم البيانات وتحويلها إلى تقارير ومؤشرات واضحة تدعم القرارات.</p></div>
-<div class="card"><div class="icon">⚙</div><h3>تحليل الأنظمة والأتمتة</h3><p>تحليل الإجراءات وتطوير سير العمل لتقليل التعقيد ورفع الكفاءة.</p></div>
-<div class="card"><div class="icon">🏢</div><h3>حلول الأعمال الرقمية</h3><p>حلول متكاملة تناسب الشركات والمؤسسات وتُبنى حسب طبيعة العمل.</p></div>
+<div class="box infobox"><h2>معلومات التواصل</h2><p>يمكنك التواصل معنا عبر القنوات التالية:</p><div class="contactCards">
+<a class="contactCard" href="tel:+96569905472"><b>📞 اتصال هاتفي</b><span>6990 5472</span><small>خلال ساعات العمل</small></a>
+<a class="contactCard" href="https://wa.me/96555822938" target="_blank"><b>💬 واتساب</b><span>5582 2938</span><small>تواصل مباشر وسريع</small></a>
+<div class="contactCard"><b>✉ البريد الإلكتروني</b><span>التواصل عبر النموذج</span><small>نرحب باستفساراتك</small></div>
+<div class="contactCard"><b>📍 الموقع</b><span>Kuwait</span><small>مقرنا الرئيسي</small></div></div>
 </div></div></section>
+</main>
 
-<section class="section light" id="why"><div class="wrap">
-<div class="sectionHead"><div class="eyebrow">WHY AYMATECH</div><h2>لماذا AYMATECH؟</h2><div class="underline"></div></div>
-<div class="features">
-<div class="feature"><b>فهم المشكلة أولًا</b><span>لا نبدأ بالتقنية قبل فهم احتياج العمل.</span></div>
-<div class="feature"><b>تصميم الحل المناسب</b><span>نختار الحل وفق المتطلبات وليس وفق قالب جاهز.</span></div>
-<div class="feature"><b>تجربة استخدام واضحة</b><span>نهتم بأن يكون الحل سهلًا وواضحًا للمستخدم.</span></div>
-<div class="feature"><b>تطوير مستقبلي</b><span>نراعي قابلية التوسع والتطوير منذ البداية.</span></div>
-</div></div></section>
-
-<section class="section" id="work"><div class="wrap">
-<div class="sectionHead"><div class="eyebrow">OUR WORK</div><h2>أعمالنا</h2><div class="underline"></div><p>نماذج من المجالات التي يمكن لـ AYMATECH تقديم حلول رقمية وتقنية لها.</p></div>
-<div class="workGrid">
-<div class="work"><img src="aymatech-approved-design.jpg" alt=""><div><h3>مواقع الشركات</h3><p>تصميم وتطوير مواقع احترافية بهوية واضحة وتجربة متجاوبة.</p></div></div>
-<div class="work"><img src="aymatech-approved-design.jpg" alt=""><div><h3>الهوية والحضور الرقمي</h3><p>بناء حضور رقمي متناسق يدعم صورة العلامة التجارية.</p></div></div>
-<div class="work"><img src="aymatech-approved-design.jpg" alt=""><div><h3>الحلول الرقمية</h3><p>تصميم حلول تقنية تساعد المؤسسات على تنظيم أعمالها وتطويرها.</p></div></div>
-</div></div></section>
-
-<section class="section light" id="process"><div class="wrap">
-<div class="sectionHead"><div class="eyebrow">HOW WE WORK</div><h2>طريقة العمل</h2><div class="underline"></div></div>
-<div class="steps">
-<div class="step"><div class="num">01</div><h3>نفهم</h3><p>نفهم احتياجك والتحديات التي تواجه العمل.</p></div>
-<div class="step"><div class="num">02</div><h3>نحلل</h3><p>نحدد المتطلبات ونقترح الحل المناسب.</p></div>
-<div class="step"><div class="num">03</div><h3>نطور</h3><p>نبني الحل ونختبره قبل الإطلاق.</p></div>
-<div class="step"><div class="num">04</div><h3>نطلق</h3><p>نطلق المشروع ونواصل المتابعة والتطوير.</p></div>
-</div></div></section>
-
-
-
-<section class="section" id="contact"><div class="wrap contactGrid">
-<div class="contactInfo"><div class="eyebrow">LET'S CONNECT</div><h2>لنجعل فكرتك حلًا</h2><p>أخبرنا عن احتياجك أو التحدي الذي تريد حله، وسنتواصل معك لمناقشة الخطوة المناسبة.</p>
-<a class="contactItem" href="tel:+96569905472">☎️ <span><b>6990 5472</b></span></a>
-<a class="contactItem" href="https://wa.me/96555822938" target="_blank">💬 <span><b>واتساب 5582 2938</b></span></a>
-<div class="contactItem">🌐 <span><b>www.aymatech.com</b></span></div>
-<div class="contactItem">📍 <span><b>Kuwait</b></span></div>
-</div>
-<div class="contactForm"><form class="form" action="https://script.google.com/macros/s/AKfycbyJDuLlIA3bRurbYw9ocbgJ1KVTfjuPlefjSHYWqavaBf9MPP_bmkdyomSOjYT2qZsr/exec" method="POST" target="aymatechFormFrame">
-<div class="formGrid">
-<div class="field"><label>الاسم *</label><input name="name" required></div>
-<div class="field"><label>الشركة</label><input name="company"></div>
-<div class="field"><label>رقم الهاتف *</label><input name="phone" required></div>
-<div class="field"><label>البريد الإلكتروني</label><input name="email" type="email"></div>
-<div class="field full"><label>الخدمة المطلوبة</label><select name="service"><option value="">اختر الخدمة</option><option>تطوير المواقع الإلكترونية</option><option>الأنظمة والبرمجيات</option><option>التكامل و APIs</option><option>تحليل البيانات والتقارير</option><option>تحليل الأنظمة والأتمتة</option><option>حلول الأعمال الرقمية</option></select></div>
-<div class="field full"><label>رسالتك</label><textarea name="message"></textarea></div>
-<div class="full"><button class="btn primary send" type="submit">إرسال الرسالة ←</button><div class="form-status"></div></div>
-</div></form></div>
-</div></section>
-
-<section class="settings"><div class="wrap settingsBox"><div><h2>AYMATECH Business Solutions</h2><p>هوية رقمية عالمية • حلول تقنية • Business Support</p></div><div class="tags"><span>Brand Identity</span><span>Digital Solutions</span><span>Business Solutions</span></div></div></section>
-<footer><div class="wrap foot"><div><b>AYMATECH</b><br><small>Smart Solutions. Better Business.</small></div><small>© 2026 AYMATECH Business Solutions. All Rights Reserved.</small></div></footer>
-
+<footer><div class="wrap foot"><img src="aymatech-logo.jpg" alt="AYMATECH"><span>© 2026 AYMATECH. All rights reserved.</span></div></footer>
+<iframe name="formFrame" id="formFrame" style="display:none"></iframe>
 <script>
-document.addEventListener("DOMContentLoaded",function(){
-const form=document.querySelector(".form"),status=document.querySelector(".form-status"),button=document.querySelector(".send");
-const frame=document.createElement("iframe"); frame.name="aymatechFormFrame"; frame.style.display="none"; document.body.appendChild(frame);
-let submitting=false;
-form.addEventListener("submit",function(){
-if(submitting)return; submitting=true; button.disabled=true; button.textContent="جاري الإرسال..."; status.textContent="";
+document.querySelectorAll('.links a,.lang,[href="#contact"],[href="#services"]').forEach(function(link){
+  link.addEventListener('click',function(e){
+    const id=this.getAttribute('href');
+    if(id && id.startsWith('#')){
+      const target=document.querySelector(id);
+      if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
+    }
+  });
 });
-frame.addEventListener("load",function(){
-if(!submitting)return;
-setTimeout(function(){form.reset();status.textContent="✓ تم إرسال طلبك بنجاح، وسنتواصل معك قريبًا.";status.style.color="#137a3a";button.disabled=false;button.textContent="إرسال الرسالة ←";submitting=false},300);
-});
-});
+const f=document.getElementById('contactForm'),s=document.getElementById('status'),b=f.querySelector('button'),frame=document.getElementById('formFrame');
+let sent=false;
+f.addEventListener('submit',()=>{sent=true;b.disabled=true;b.textContent='جاري الإرسال...';s.textContent=''});
+frame.addEventListener('load',()=>{if(!sent)return;setTimeout(()=>{f.reset();s.textContent='✓ تم إرسال طلبك بنجاح، وسنتواصل معك قريبًا.';s.style.color='#159447';b.disabled=false;b.textContent='إرسال الرسالة ✈';sent=false},400)});
 </script>
-
-<script>
-(function(){
-  const toggle=document.getElementById('languageToggle');
-  if(!toggle) return;
-
-  const T={
-    'من نحن':'About Us','خدماتنا':'Services','لماذا AYMATECH':'Why AYMATECH','لماذا AYMATECH؟':'Why AYMATECH?','أعمالنا':'Our Work','طريقة العمل':'How We Work','تواصل معنا':'Contact Us',
-    'AYMATECH BUSINESS SOLUTIONS':'AYMATECH BUSINESS SOLUTIONS','Business Solutions':'Business Solutions','حلول ذكية .. لأعمال أفضل':'Smart Solutions. Better Business.',
-    'نبني حلولًا تقنية ورقمية تساعد الشركات والمؤسسات على تطوير أعمالها، تبسيط عملياتها، وتحويل أفكارها إلى حلول عملية قابلة للنمو.':'We build digital and technology solutions that help companies and organizations improve their business, simplify operations, and turn ideas into practical, scalable solutions.',
-    'ابدأ مشروعك معنا ←':'Start your project with us ←','تواصل عبر واتساب':'Contact us on WhatsApp',
-    'نفهم احتياجك':'We understand your needs','قبل بناء الحل':'Before building the solution','حلول عملية':'Practical solutions','مصممة للأعمال':'Built for business','قابلة للتوسع':'Scalable','مع نمو مشروعك':'As your business grows','دعم مستمر':'Continuous support','من البداية إلى ما بعد الإطلاق':'From start to post-launch',
-    'WHO WE ARE':'WHO WE ARE','نبني حلولًا تخدم الأعمال':'We build solutions that serve business','AYMATECH Business Solutions':'AYMATECH Business Solutions',
-    'شركة متخصصة في الحلول الرقمية والتقنية التي تساعد الشركات والمؤسسات على تطوير أعمالها وتحسين الكفاءة.':'A company specialized in digital and technology solutions that help companies and organizations develop their business and improve efficiency.',
-    'نبدأ من فهم التحدي، ثم نحلل الاحتياج ونبني الحل المناسب، مع التركيز على البساطة والاعتمادية وإمكانية التطوير مستقبلًا.':'We start by understanding the challenge, then analyze the need and build the right solution, with a focus on simplicity, reliability, and future scalability.',
-    'تحدث معنا ←':'Talk to us ←','WHAT WE DO':'WHAT WE DO','مجموعة من الحلول التقنية التي تغطي احتياجات الأعمال من الفكرة إلى التشغيل والتطوير.':'A range of technology solutions covering business needs from idea to operation and development.',
-    'تطوير المواقع الإلكترونية':'Web Development','مواقع احترافية سريعة ومتجاوبة تعكس هوية الشركة وتدعم نموها الرقمي.':'Professional, fast, responsive websites that reflect the company identity and support digital growth.',
-    'الأنظمة والبرمجيات':'Software Solutions','حلول وبرامج مخصصة لتنظيم العمليات اليومية وتحسين إدارة الأعمال.':'Custom solutions and software for organizing daily operations and improving business management.',
-    'التكامل و APIs':'Integration & APIs','ربط الأنظمة والخدمات والبيانات لتقليل العمل اليدوي وتحسين تدفق المعلومات.':'Connecting systems, services, and data to reduce manual work and improve information flow.',
-    'تحليل البيانات والتقارير':'Data & Analytics','تنظيم البيانات وتحويلها إلى تقارير ومؤشرات واضحة تدعم القرارات.':'Organizing data and turning it into clear reports and indicators that support decisions.',
-    'تحليل الأنظمة والأتمتة':'Systems Analysis & Automation','تحليل الإجراءات وتطوير سير العمل لتقليل التعقيد ورفع الكفاءة.':'Analyzing processes and improving workflows to reduce complexity and increase efficiency.',
-    'حلول الأعمال الرقمية':'Digital Business Solutions','حلول متكاملة تناسب الشركات والمؤسسات وتُبنى حسب طبيعة العمل.':'Integrated solutions tailored to companies and organizations and built around their business needs.',
-    'WHY AYMATECH':'WHY AYMATECH','فهم المشكلة أولًا':'Understand the problem first','لا نبدأ بالتقنية قبل فهم احتياج العمل.':'We do not start with technology before understanding the business need.',
-    'تصميم الحل المناسب':'Design the right solution','نختار الحل وفق المتطلبات وليس وفق قالب جاهز.':'We choose the solution according to requirements, not a ready-made template.',
-    'تجربة استخدام واضحة':'Clear user experience','نهتم بأن يكون الحل سهلًا وواضحًا للمستخدم.':'We make the solution simple and clear for users.',
-    'تطوير مستقبلي':'Future-ready development','نراعي قابلية التوسع والتطوير منذ البداية.':'We consider scalability and future development from the start.',
-    'OUR WORK':'OUR WORK','نماذج من المجالات التي يمكن لـ AYMATECH تقديم حلول رقمية وتقنية لها.':'Examples of areas where AYMATECH can provide digital and technology solutions.',
-    'مواقع الشركات':'Corporate Websites','تصميم وتطوير مواقع احترافية بهوية واضحة وتجربة متجاوبة.':'Professional website design and development with a clear identity and responsive experience.',
-    'الهوية والحضور الرقمي':'Digital Identity & Presence','بناء حضور رقمي متناسق يدعم صورة العلامة التجارية.':'Building a consistent digital presence that supports the brand image.',
-    'الحلول الرقمية':'Digital Solutions','تصميم حلول تقنية تساعد المؤسسات على تنظيم أعمالها وتطويرها.':'Designing technology solutions that help organizations organize and improve their business.',
-    'HOW WE WORK':'HOW WE WORK','نفهم':'Understand','نفهم احتياجك والتحديات التي تواجه العمل.':'We understand your needs and business challenges.',
-    'نحلل':'Analyze','نحدد المتطلبات ونقترح الحل المناسب.':'We define requirements and propose the right solution.',
-    'نطور':'Develop','نبني الحل ونختبره قبل الإطلاق.':'We build and test the solution before launch.',
-    'نطلق':'Launch','نطلق المشروع ونواصل المتابعة والتطوير.':'We launch the project and continue support and development.',
-    'LET’S CONNECT':'LET’S CONNECT','LET\'S CONNECT':'LET’S CONNECT','لنجعل فكرتك حلًا':'Let’s turn your idea into a solution','أخبرنا عن احتياجك أو التحدي الذي تريد حله، وسنتواصل معك لمناقشة الخطوة المناسبة.':'Tell us about your need or challenge, and we will contact you to discuss the right next step.',
-    'الخدمة المطلوبة':'Requested Service','اختر الخدمة':'Choose a service','رسالتك':'Your Message','الاسم *':'Name *','الشركة':'Company','رقم الهاتف *':'Phone Number *','البريد الإلكتروني':'Email','إرسال الرسالة ←':'Send Message ←',
-    'هوية رقمية عالمية • حلول تقنية • Business Support':'Global digital identity • Technology solutions • Business Support','Brand Identity':'Brand Identity','Digital Solutions':'Digital Solutions','Business Solutions':'Business Solutions',
-    'جاري الإرسال...':'Sending...','✓ تم إرسال طلبك بنجاح، وسنتواصل معك قريبًا.':'✓ Your request was sent successfully. We will contact you soon.'
-  };
-
-  const originals=new WeakMap();
-  function translate(toEn){
-    const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
-    const nodes=[]; let n;
-    while(n=walker.nextNode()) nodes.push(n);
-    nodes.forEach(node=>{
-      if(!originals.has(node)) originals.set(node,node.nodeValue);
-      const original=originals.get(node);
-      const value=original.trim();
-      if(!value) return;
-      if(toEn && T[value]) node.nodeValue=original.replace(value,T[value]);
-      else if(!toEn) node.nodeValue=original;
-    });
-    document.querySelectorAll('option').forEach(opt=>{
-      if(!opt.dataset.ar) opt.dataset.ar=opt.textContent;
-      opt.textContent=toEn ? (T[opt.dataset.ar] || opt.dataset.ar) : opt.dataset.ar;
-    });
-    document.documentElement.lang=toEn?'en':'ar';
-    document.documentElement.dir=toEn?'ltr':'rtl';
-    toggle.textContent=toEn?'عربي ◉':'EN ◉';
-    localStorage.setItem('aymatech-lang',toEn?'en':'ar');
-  }
-  let english=localStorage.getItem('aymatech-lang')==='en';
-  translate(english);
-  toggle.addEventListener('click',function(e){e.preventDefault(); english=!english; translate(english);});
-})();
-</script>
-
-</body>
-</html>
+</body></html>
