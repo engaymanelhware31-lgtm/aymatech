@@ -35,6 +35,38 @@ nav{display:flex;gap:28px;align-items:center;font-size:13px;font-weight:700}nav 
 .form-status.error{background:#fff0f0;color:#a52222;border:1px solid #efc0c0}
 .send:disabled{opacity:.65;cursor:wait}
 
+
+/* Mobile layout fix */
+html, body { max-width:100%; overflow-x:hidden; }
+.contactGrid { width:100%; min-width:0; }
+.contactVisual, .contactFormArea { min-width:0; width:100%; }
+@media(max-width:950px){
+  .contactGrid{
+    display:grid;
+    grid-template-columns:1fr !important;
+    width:100%;
+  }
+  .contactVisual{
+    min-height:360px;
+    width:100%;
+  }
+  .contactFormArea{
+    width:100%;
+    padding:42px 5%;
+  }
+}
+@media(max-width:560px){
+  .contactVisual{
+    min-height:390px;
+    padding:55px 6%;
+  }
+  .contactVisual h2{font-size:32px}
+  .contactVisual p{font-size:22px}
+  .contactItem{font-size:16px}
+  .contactFormArea{width:100%;max-width:100%}
+  input,select,textarea{max-width:100%}
+}
+
 </style>
 </head>
 <body>
@@ -97,10 +129,13 @@ document.addEventListener("DOMContentLoaded", function () {
   frame.style.display = "none";
   document.body.appendChild(frame);
 
-  let submitting = false;
+  let submitted = false;
 
   frame.addEventListener("load", function () {
-    if (!submitting) return;
+    if (!submitted) return;
+
+    submitted = false;
+    form.reset();
 
     if (status) {
       status.textContent = "✓ تم إرسال طلبك بنجاح، وسنتواصل معك قريبًا.";
@@ -111,13 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
       button.disabled = false;
       button.textContent = "إرسال الرسالة ←";
     }
-
-    form.reset();
-    submitting = false;
   });
 
   form.addEventListener("submit", function () {
-    submitting = true;
+    submitted = true;
 
     if (button) {
       button.disabled = true;
